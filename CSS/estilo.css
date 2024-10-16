@@ -30,8 +30,8 @@ body {
 }
 
 #imagem {
-  height: 150px; /* Definindo o tamanho da imagem */
-  width: 150px;
+  height: px;  /*Definindo o tamanho da imagem */
+  width: 10%;
   border-radius: 50%; /* Definindo uma borda para a imagem */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adicionando uma sombra mais suave */
   object-fit: cover;
@@ -45,16 +45,16 @@ body {
 
 /* Movendo um pouco esse parágrafo porque estava dentro da sombra da imagem */
 p1 {
-  padding: 7px;
+  padding: padding 10%;
   color: white;
-  font-size: 20px;
+  font-size: 20%;
 }
 
 h1 {
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Sombra mais suave */
   color: white;
   text-align: center; /* Centralizando o título */
-  padding: 10px; /* Adicionando um pouco de padding */
+  padding: 2%; /* Adicionando um pouco de padding */
   margin: 20px 0; /* Espaçamento acima e abaixo do título */
 }
 
@@ -70,25 +70,6 @@ p {
   font-size: 20px;
   text-align: justify;
   line-height: 1.6; /* Melhorando a legibilidade */
-}
-
-/* Estilizando o botão */
-#botaoDeprojetos {
-  position: absolute; /* Posição absoluta */
-  top: 50px; /* Distância do botão em relação ao topo da página */
-  right: -20px; /* Valor negativo para ficar -20px à direita da margem da página */
-  margin: 20px; /* Distância do botão em relação à margem da página */
-  background-color: transparent; /* Background transparente */
-  color: white; /* Cor da fonte do botão */
-  border: none; /* Tirando a borda do botão */
-  font-size: 30px; /* Tamanho do texto do botão */
-  transform: rotate(90deg); /* Rotação de 90 graus */
-  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
-  transition: color 0.3s; /* Transição suave para a cor */
-}
-
-#botaoDeprojetos:hover {
-  color: cyan; /* Mudança de cor ao passar o mouse */
 }
 
 hr {
