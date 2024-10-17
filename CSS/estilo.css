@@ -141,5 +141,9 @@ section {
   p{
     font-size: 11pt;
   }
-  
+
+  .navegacao li {
+    font-size: 8pt;
+    padding: auto;
+  }
 }
