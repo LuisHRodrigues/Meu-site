@@ -13,7 +13,7 @@ body {
     red
   );
   background-size: 100% 600%; /* Ajuste para permitir o movimento contínuo */
-  animation: moverGradiente 10s linear infinite; /* Animação para mover o gradiente */
+  animation: moverGradiente 15s linear infinite; /* Animação para mover o gradiente */
   height: 100vh; /* Para preencher toda a página */
   margin: 0;
   font-family: "Arial", sans-serif; /* Fonte mais moderna */
@@ -30,8 +30,8 @@ body {
 }
 
 #imagem {
-  height: px;  /*Definindo o tamanho da imagem */
-  width: 10%;
+  height: 210px;  /*Definindo o tamanho da imagem */
+  width: 13%;
   border-radius: 50%; /* Definindo uma borda para a imagem */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adicionando uma sombra mais suave */
   object-fit: cover;
@@ -44,10 +44,10 @@ body {
 }
 
 /* Movendo um pouco esse parágrafo porque estava dentro da sombra da imagem */
-p1 {
+.container-head p {
   padding: padding 10%;
   color: white;
-  font-size: 20%;
+  font-size: 17pt;
 }
 
 h1 {
@@ -67,7 +67,7 @@ h2 {
 p {
   /* Definindo que todo parágrafo vai ter fonte branca */
   color: white;
-  font-size: 20px;
+  font-size: 15pt;
   text-align: justify;
   line-height: 1.6; /* Melhorando a legibilidade */
 }
@@ -119,4 +119,27 @@ section {
   .navegacao li a:hover {
     background-color: rgba(0,0,0,0.5); /* Fundo levemente escurecido ao passar o mouse */
   }
+
+
+}
+
+
+
+@media  (max-width: 600px){ /*if tela <= 400*/
+
+  .container-head p{
+    font-size: 11pt
+  }
+
+  #imagem{
+    
+    height: 90px;
+    width: 30%;
+    margin-left: -3%;
+  }
+
+  p{
+    font-size: 11pt;
+  }
+  
 }
