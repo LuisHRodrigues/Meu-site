@@ -30,7 +30,7 @@ body {
 }
 
 #imagem {
-  height: 210px;  /*Definindo o tamanho da imagem */
+  height: 250px; /*Definindo o tamanho da imagem */
   width: 13%;
   border-radius: 50%; /* Definindo uma borda para a imagem */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adicionando uma sombra mais suave */
@@ -117,28 +117,29 @@ section {
   }
 
   .navegacao li a:hover {
-    background-color: rgba(0,0,0,0.5); /* Fundo levemente escurecido ao passar o mouse */
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Fundo levemente escurecido ao passar o mouse */
   }
-
-
 }
 
+@media (max-width: 600px) {
+  /*if tela <= 400*/
 
-
-@media  (max-width: 600px){ /*if tela <= 400*/
-
-  .container-head p{
-    font-size: 11pt
+  .container-head p {
+    font-size: 11pt;
   }
 
-  #imagem{
-    
+  #imagem {
     height: 90px;
     width: 30%;
     margin-left: -3%;
   }
 
-  p{
+  p {
     font-size: 11pt;
   }
 
