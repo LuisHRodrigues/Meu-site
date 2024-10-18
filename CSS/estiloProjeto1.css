@@ -1,3 +1,10 @@
+* {
+  margin: 0; /* Define a margem em zero, garantindo que não haverá espaços inesperados*/
+  padding: 0; /* Define o padding (espaço interno dos elementos) em zero*/
+  box-sizing: border-box; /*Define o modelo de caixa para que width e height incluam o padding e
+   a borda, facilitando o controle do layout.*/
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -41,9 +48,15 @@ section {
   list-style-type: none;
 }
 #foto {
-  width: 250px;
+  max-width: 70vw;
   border-radius: 50px;
   display: block;
   margin: 0 auto;
   padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  #foto {
+    width: 250px;
+  }
 }

@@ -31,7 +31,7 @@ body {
 
 #imagem {
   height: 250px; /*Definindo o tamanho da imagem */
-  width: 13%;
+  width: 20%;
   border-radius: 50%; /* Definindo uma borda para a imagem */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adicionando uma sombra mais suave */
   object-fit: cover;
