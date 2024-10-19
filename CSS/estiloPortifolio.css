@@ -1,5 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização básica */
 body {
-  /* Criando um degrade de cores que se alternam */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Gradiente com animação */
+body {
   background: linear-gradient(
     45deg,
     blue,
@@ -12,124 +26,131 @@ body {
     purple,
     red
   );
-  background-size: 100% 600%; /* Ajuste para permitir o movimento contínuo */
-  animation: moverGradiente 15s linear infinite; /* Animação para mover o gradiente */
-  height: 100vh; /* Para preencher toda a página */
-  margin: 0;
-  font-family: "Arial", sans-serif; /* Fonte mais moderna */
+  background-size: 100% 600%;
+  animation: moverGradiente 15s linear infinite;
+  height: 100vh;
 }
 
-/* Definindo uma animação CSS que altera as cores de fundo de acordo com o tempo */
+/* Animação de movimento do gradiente */
 @keyframes moverGradiente {
   0% {
-    background-position: 0% 0%; /* Início da animação */
+    background-position: 0% 0%;
   }
   100% {
-    background-position: 0% 100%; /* Fim da animação */
+    background-position: 0% 100%;
   }
 }
 
+/* Imagem circular com ajuste automático */
 #imagem {
-  height: 250px; /*Definindo o tamanho da imagem */
-  width: 20%;
-  border-radius: 50%; /* Definindo uma borda para a imagem */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adicionando uma sombra mais suave */
+  height: auto;
+  max-width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   object-fit: cover;
 }
 
+/* Layout flexível para imagem e texto */
 .fotoenome {
   display: flex;
   align-items: center;
-  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* Movendo um pouco esse parágrafo porque estava dentro da sombra da imagem */
+/* Ajuste de parágrafos */
 .container-head p {
-  padding: padding 10%;
+  padding: 10%;
   color: white;
-  font-size: 17pt;
+  font-size: 1rem; /* Usando rem para responsividade */
 }
 
+/* Estilo do título */
 h1 {
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Sombra mais suave */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
   color: white;
-  text-align: center; /* Centralizando o título */
-  padding: 2%; /* Adicionando um pouco de padding */
-  margin: 20px 0; /* Espaçamento acima e abaixo do título */
+  text-align: center;
+  padding: 2%;
+  margin: 20px 0;
 }
 
 h2 {
   color: white;
   text-align: left;
-  margin: 10px 0; /* Espaçamento acima e abaixo do subtítulo */
+  margin: 10px 0;
 }
 
 p {
-  /* Definindo que todo parágrafo vai ter fonte branca */
   color: white;
-  font-size: 15pt;
+  font-size: 1rem; /* Usando rem */
   text-align: justify;
-  line-height: 1.6; /* Melhorando a legibilidade */
+  line-height: 1.6;
+  word-wrap: break-word; /* Quebra palavras muito longas */
 }
 
 hr {
-  border: none; /* Remove a borda padrão */
-  height: 3px; /* Ajustando a espessura */
-  background-color: white; /* Cor da linha */
-  margin-top: 90px; /* Espaço acima da linha */
+  border: none;
+  height: 3px;
+  background-color: white;
+  margin-top: 90px;
 }
-/* Estilos para as seções */
+
+/* Estilos das seções */
 section {
-  margin-bottom: 2rem; /* Espaçamento entre as seções */
-  border-radius: 10px; /* Bordas arredondadas */
-  padding: 2rem; /* Espaçamento interno das seções */
-  border-bottom: 10px solid rgba(0, 0, 0, 0.3); /* Linha divisória/sombra fake na parte inferior da seção */
-  background-color: rgba(0, 0, 0, 0.3); /* Fundo semi-transparente */
-  .navegacao {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Usando Flexbox para alinhar os itens */
-    justify-content: center; /* Centralizando os itens */
-    background-color: #333; /* Cor de fundo da barra de navegação */
-  }
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+}
 
-  .navegacao {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Usando Flexbox para alinhar os itens */
-    justify-content: center; /* Centralizando os itens */
-    background-color: rgba(0, 0, 0, 0); /* Fundo transparente */
-  }
+/* Barra de navegação com flexbox */
+.navegacao {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+}
 
-  .navegacao li {
-    margin: 0 2%; /* Espaçamento entre os itens */
-  }
+.navegacao li {
+  margin: 0 2%;
+}
 
-  .navegacao li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s; /* Transição suave para o hover */
-    border-radius: 20px;
-  }
+.navegacao li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
 
-  .navegacao li a:hover {
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.5
-    ); /* Fundo levemente escurecido ao passar o mouse */
+.navegacao li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Imagem responsiva */
+#foto {
+  max-width: 70vw;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+/* Responsividade para telas maiores que 600px */
+@media (min-width: 600px) {
+  #foto {
+    width: 250px;
   }
 }
 
+/* Responsividade para telas pequenas */
 @media (max-width: 600px) {
-  /*if tela <= 400*/
-
   .container-head p {
     font-size: 11pt;
   }
@@ -138,6 +159,7 @@ section {
     height: 90px;
     width: 30%;
     margin-left: -3%;
+    justify-content: center;
   }
 
   p {
@@ -149,42 +171,37 @@ section {
     padding: auto;
   }
 }
-* {
-  margin: 0; /* Define a margem em zero, garantindo que não haverá espaços inesperados*/
-  padding: 0; /* Define o padding (espaço interno dos elementos) em zero*/
-  box-sizing: border-box; /*Define o modelo de caixa para que width e height incluam o padding e
-   a borda, facilitando o controle do layout.*/
+
+/* Adição de mais media queries para responsividade */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 14pt;
+  }
+
+  #imagem {
+    height: 150px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 13pt;
+  }
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-main {
-  padding: 2rem;
-}
+@media (min-width: 1025px) {
+  body {
+    font-size: 16pt;
+  }
 
-.container-footer li {
-  list-style-type: none;
-}
-#foto {
-  max-width: 70vw;
-  border-radius: 50px;
-  display: block;
-  margin: 0 auto;
-  padding-bottom: 1rem;
-}
+  #imagem {
+    height: 200px;
+    width: 20%;
+  }
 
-@media (min-width: 600px) {
-  #foto {
-    width: 250px;
+  p {
+    font-size: 15pt;
   }
 }
