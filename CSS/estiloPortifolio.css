@@ -156,10 +156,9 @@ section {
   }
 
   #imagem {
-    height: 90px;
-    width: 30%;
-    margin-left: -3%;
-    justify-content: center;
+    height: 40vw;
+    width: 40vw;
+    margin-left: 21vw;
   }
 
   p {
