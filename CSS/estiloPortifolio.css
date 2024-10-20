@@ -102,7 +102,6 @@ section {
   padding: 2rem;
   border-bottom: 10px solid rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.3);
-  display: grid;
 }
 
 /* Barra de navegação com flexbox */
@@ -165,12 +164,17 @@ section {
     font-size: 11pt;
   }
 
-  .navegacao li {
-    font-size: 8pt;
-    padding: auto;
+  .navegacao {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens na barra */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    width: 100%; /* Garante que ocupe a largura total da tela */
+    background-color: rgba(0, 0, 0, 0); /* Fundo transparente */
+    overflow: hidden; /* Evita que o conteúdo transborde */
   }
 }
-
 /* Adição de mais media queries para responsividade */
 
 @media (min-width: 768px) and (max-width: 1024px) {
