@@ -100,6 +100,7 @@ section {
   margin-bottom: 2rem;
   border-radius: 10px;
   padding: 2rem;
+  margin: 2vw;
   border-bottom: 10px solid rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -173,6 +174,10 @@ section {
     width: 100%; /* Garante que ocupe a largura total da tela */
     background-color: rgba(0, 0, 0, 0); /* Fundo transparente */
     overflow: hidden; /* Evita que o conteúdo transborde */
+  }
+  section {
+    padding: 2rem;
+    margin: 3vw;
   }
 }
 /* Adição de mais media queries para responsividade */
