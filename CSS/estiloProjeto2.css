@@ -6,11 +6,47 @@
 }
 body {
   background: linear-gradient(blue, cyan, purple);
-  height: 100vh; /* Para preencher toda a página */
+  height: 100vw; /* Para preencher toda a página */
   margin: 0;
 }
 h1 {
   display: flex;
   justify-content: center;
   padding: 2vw;
+}
+  /* Estilos das seções */
+section {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2vw;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+.container-fotos{
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: center;
+
+}
+h1{
+  display: flex;
+  justify-items: center;
+}
+#fotoMarilha2{
+width: 15vw;
+  margin-right: 15px; 
+  border-radius: 30px;
+}
+#fotoMarilha{
+ width: 15vw;
+  margin-right: 15px; 
+  border-radius: 30px;
+}
+#fotoMarilha3{
+  width: 15vw;
+  border-radius: 30px;
+  margin-right: 15px; 
 }
