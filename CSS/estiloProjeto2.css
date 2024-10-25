@@ -6,15 +6,17 @@
 }
 body {
   background: linear-gradient(blue, cyan, purple);
-  height: 100vw; /* Para preencher toda a página */
+  height: 100%; /* Para preencher toda a página */
+  width: 100%;
   margin: 0;
 }
 h1 {
   display: flex;
   justify-content: center;
   padding: 2vw;
+  color: white;
 }
-  /* Estilos das seções */
+/* Estilos das seções */
 section {
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -22,31 +24,60 @@ section {
   margin: 2vw;
   border-bottom: 10px solid rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.3);
+}
+h2 {
+  color: white;
+}
+footer {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+p {
+  color: white;
+}
 
+.container-footer li {
+  color: white;
+  list-style-type: none;
 }
-.container-fotos{
+.container-p1 {
+  font-size: 1rem; /* Usando rem */
+  text-align: justify;
+  line-height: 1.6;
+  word-wrap: break-word; /* Quebra palavras muito longas */
+}
+.container-paragrafo-foto {
+  text-align: center;
+}
+.fotos {
   display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  justify-content: center;
-
 }
-h1{
-  display: flex;
-  justify-items: center;
-}
-#fotoMarilha2{
-width: 15vw;
-  margin-right: 15px; 
+.foto img {
+  width: 20vw;
+  height: 15vw;
+  margin-right: 15px;
   border-radius: 30px;
+  margin-top: 2vw;
 }
-#fotoMarilha{
- width: 15vw;
-  margin-right: 15px; 
-  border-radius: 30px;
-}
-#fotoMarilha3{
-  width: 15vw;
-  border-radius: 30px;
-  margin-right: 15px; 
+@media (max-width: 600px) {
+  .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .foto img {
+    width: 50vw;
+    height: 30vw;
+    object-fit: cover; /* Para garantir que a imagem se ajuste bem dentro do contêiner */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
 }
