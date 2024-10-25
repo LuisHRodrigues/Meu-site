@@ -53,6 +53,7 @@ p {
 }
 .fotos {
   display: flex;
+  justify-content: center;
 }
 .foto img {
   width: 20vw;
@@ -60,7 +61,10 @@ p {
   margin-right: 15px;
   border-radius: 30px;
   margin-top: 2vw;
+  margin: 1vw;
 }
+
+/*Daqui pra frente é a estilização para dispositivos moveis*/
 @media (max-width: 600px) {
   .fotos {
     display: flex;
