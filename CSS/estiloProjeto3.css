@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(70, 24, 172, 1);
+}
+.botaoPrincipal {
+  margin: 2vw;
+  background-color: transparent;
+  border: none;
+  display: flex;
+}
+.botaoPrincipal h1 {
+  align-content: center;
+  color: white;
+  font-size: 30pt;
+}
+.botao {
+  background-color: transparent;
+  width: 17vw;
+  height: 5vw;
+  border: none;
+}
+.botao li {
+  color: white;
+  font-size: 13pt;
+}
+.botao li:hover {
+  color: yellow;
+}
+.botao:hover {
+  background-color: rgba(0, 0, 0, 0.3s);
+}
