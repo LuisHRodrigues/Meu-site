@@ -50,6 +50,7 @@ p {
 }
 .container-paragrafo-foto {
   text-align: center;
+  padding-bottom: 2vw;
 }
 .fotos {
   display: flex;
@@ -62,6 +63,24 @@ p {
   border-radius: 30px;
   margin-top: 2vw;
   margin: 1vw;
+}
+.foto p {
+  display: flex;
+  justify-content: center;
+}
+.reserva-bt {
+  background-color: transparent; /*deixando o fundo do botão transparente*/
+  width: 10vw; /*Largura do botão*/
+  height: 3vw; /*Altura do botão*/
+  justify-content: flex-start;
+  margin: 0 1vw; /* Define a margem horizontal */
+  border-radius: 1vw;
+  margin-bottom: 1vw; /*Margem de baixo do botão (isso é porque tava muito perto dos meios de contatos) */
+  transition: background-color 0.3s ease;
+  color: aliceblue;
+}
+.reserva-br :hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*Daqui pra frente é a estilização para dispositivos moveis*/
