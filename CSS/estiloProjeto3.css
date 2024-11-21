@@ -47,6 +47,9 @@ body {
   margin-top: -5vw;
   /*margin-right: 48vw;*/
 }
+.barra-pesquisa{
+  padding-top: 1vw;
+}
 
 .input-pesquisa {
   padding: 1vw;
@@ -58,7 +61,7 @@ body {
 }
 
 .botao-pesquisa {
-  padding: 10px 20px;
+ margin-top: 1vw;
   font-size: 12pt;
   border: none;
   background-color: #007bff;
@@ -66,8 +69,32 @@ body {
   border-radius: 4px;
   cursor: pointer;
   margin-left: 3vw;
+  width: 6vw;
+  height: 3vw;
 }
 
 .botao-pesquisa:hover {
   background-color: #0056b3;
+}
+.eletrodomestico{
+  color: white;
+  display: flex;
+  
+}
+section{
+margin-bottom: 2rem;
+border-radius: 10px;
+padding: 2rem;
+margin: 2vw;
+border-bottom: 10px solid rgba(0, 0, 0, 0.2);
+background-color: rgba(0, 0, 0, 0.1);}
+
+.foto-geladeira{
+padding-right: 10vw; 
+padding-top: 5vw; 
+margin-left: -15vw;
+}
+.foto-forno{
+  padding-top: 21vw
+  
 }
