@@ -121,10 +121,11 @@ p {
   margin-bottom: 1vw;
 }
 .content {
+  
   display: flex;
   align-items: center;
   align-content: center;
-  padding-left: 2vw;
+  padding-left: 5vw;
   padding-bottom: 1vw;
 }
 .paragrafo-botao-2 {
