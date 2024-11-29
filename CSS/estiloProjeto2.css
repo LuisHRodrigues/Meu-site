@@ -114,14 +114,13 @@ p {
   transition: background-color 0.3s;
 }
 .button:hover {
-  background-color: #ddd;
+  background-color: gray;
 }
 .paragrafo-botao {
   color: black;
   margin-bottom: 1vw;
 }
 .content {
-  
   display: flex;
   align-items: center;
   align-content: center;

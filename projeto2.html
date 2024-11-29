@@ -68,35 +68,27 @@
           <li>Instagram: @eventosGoiania</li>
         </ul>
       </section>
-
-      <!--Começo da tela de reserva-->
       <div id="novaPagina" class="nova-pagina">
         <div class="pagina-container">
           <h2 class="paragrafo-botao">Suas informações</h2>
 
-          <!--Campo do nome-->
-          <form onsubmit="confirmButton()">
+          <!-- Campo do nome -->
+          <form onsubmit="confirmButton(event)">
             <div class="content">
-              <!--<label class="paragrafo-botao-2">Nome </label>-->
               <input type="text" id="nome" placeholder="Nome..." required />
             </div>
 
-            <!--Campo do email-->
+            <!-- Campo do email -->
             <div class="content">
-              <!--<label class="paragrafo-botao-2">Email</label>-->
               <input type="email" id="email" placeholder="Email..." required />
             </div>
-            
-            <button type="submit" class="button">
-            Confirmar
-          </button>
-          <button type="submit" class="button" onclick="cancelButton()">
-            Cancelar
-          </button>
-          </form>
 
-          <!--Botões de confirmar e concelar da pagina-->
-          
+            <!-- Botões de confirmar e cancelar -->
+            <button type="submit" class="button">Confirmar</button>
+            <button type="button" class="button" onclick="cancelButton(event)">
+              Cancelar
+            </button>
+          </form>
         </div>
       </div>
     </footer>
