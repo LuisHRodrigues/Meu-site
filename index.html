@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Site Pessoal</title>
     <link rel="stylesheet" href="CSS/estiloIndex.css" />
+    <script src="JS/index.js"></script>
   </head>
   <body>
     <header>
@@ -12,16 +13,16 @@
     </header>
     <main>
       <img id="foto" src="img/minhaFoto.jpg" alt="Minha foto" />
-      <section class="container-section">
+      <section>
         <h2>Sobre Mim</h2>
         <p>
           Olá! Meu nome é Luis Henrique Rodrigues de Oliveira. Nasci em Goiânia
           no dia 27 de julho de 2004. Atualmente, moro em Urutaí-GO, onde estou
           cursando a faculdade de Sistemas de Informação e no momento estou no
-          4° período. 4° período.
+          4° período.
         </p>
       </section>
-      <section class="container-section">
+      <section>
         <h2>Hobbys</h2>
         <ul>
           <li>Tocar ukulele</li>
@@ -51,8 +52,8 @@
       </ul>
 
       <div class="portfolio-link">
-        <p>Clique no botão abaixo para acessar meu portfólio:</p>
-        <a href="Portifolio.html">Portfólio</a>
+        <p>Clique no botão abaixo para acessar meu portfólio</p>
+        <button type="button" onclick="portifolio()">Portifolio</button>
       </div>
     </footer>
   </body>
