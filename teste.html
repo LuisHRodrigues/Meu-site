@@ -3,109 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de Login</title>
-    <link rel="stylesheet" href="CSS/estilo.css" />
   </head>
   <body>
-    <header>
-      <!--Uma mensagem de bem vindo acompanhado de um botão logo abaixo-->
-      <h1>Bem-vindo</h1>
-      <button onclick="openLoginForm()">Login</button>
-      <!--O botão está chamando um metodo quando for clicado-->
-    </header>
-
-    <div id="loginForm" class="login-form">
-      <form action="/login" method="post" class="form-container">
-        <h2>Login</h2>
-        <label for="username"><b>Usuário</b></label>
-        <input
-          type="text"
-          placeholder="Digite seu usuário"
-          name="username"
-          required 
-        />
-
-        <label for="password"><b>Senha</b></label>
-        <input
-          type="password"
-          placeholder="Digite sua senha"
-          name="password"
-          required
-        />
-
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn cancel" onclick="closeLoginForm()">
-          Cancelar
-        </button>
-      </form>
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="img/luanSatana.jpeg" alt="Imagem 1" />
+        <img src="img/Marilha.PNG" alt="Imagem 2" />
+        <img src="img/HenriqueJuliano.jpg" alt="Imagem 3" />
+      </div>
+      <input
+        type="range"
+        min="0"
+        max="2"
+        step="1"
+        value="0"
+        class="carousel-range"
+      />
     </div>
-
-    <script src="JS/script.js"></script>
   </body>
+
   <style>
-    /* Estilo para o formulário de login */
-    .login-form {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.4);
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
     }
 
-    .form-container {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      width: 300px;
-      margin: auto;
-    }
-
-    input[type="text"],
-    input[type="password"] {
+    .carousel-container {
       width: 100%;
-      padding: 10px;
-      margin: 5px 0 10px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
+      max-width: 600px;
+      position: absolute;
+      overflow: hidden;
     }
 
-    button[type="submit"],
-    .cancel {
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%; /* Para suportar as 3 imagens */
+    }
+
+    .carousel img {
       width: 100%;
-      margin-top: 10px;
+      flex-shrink: 0;
     }
 
-    .cancel {
-      background-color: #f44336;
-    }
-
-    button[type="submit"]:hover,
-    .cancel:hover {
-      opacity: 0.8;
+    .carousel-range {
+      width: 120%;
+      margin-top: 1rem;
+      cursor: grabbing;
     }
   </style>
-  <script>
-    function openLoginForm() {
-      document.getElementById("loginForm").style.display = "flex";
-    }
 
-    function closeLoginForm() {
-      document.getElementById("loginForm").style.display = "none";
-    }
+  <script>
+    const carousel = document.querySelector(".carousel");
+    const rangeInput = document.querySelector(".carousel-range");
+
+    // Atualiza o carrossel quando o usuário move a barra de navegação
+    rangeInput.addEventListener("input", () => {
+      const index = rangeInput.value;
+      const offset = -index * 100; // Calcula a posição do carrossel
+      carousel.style.transform = `translateX(${offset}%)`;
+    });
   </script>
 </html>

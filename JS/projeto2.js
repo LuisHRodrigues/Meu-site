@@ -15,3 +15,7 @@ function cancelButton(event) {
   alert("Reserva cancelada!");
   document.getElementById("novaPagina").style.display = "none";
 }
+
+function portifolio() {
+  window.location.href = "Portifolio.html";
+}

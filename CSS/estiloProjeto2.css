@@ -69,18 +69,20 @@ p {
   justify-content: center;
 }
 .reserva-bt {
-  background-color: transparent; /*deixando o fundo do botão transparente*/
-  width: 10vw; /*Largura do botão*/
-  height: 3vw; /*Altura do botão*/
+  background-color: transparent; /* Fundo do botão */
+  width: 10vw; /* Largura do botão */
+  height: 3vw; /* Altura do botão */
   justify-content: flex-start;
-  margin: 0 1vw; /* Define a margem horizontal */
-  border-radius: 1vw;
-  margin-bottom: 1vw; /*Margem de baixo do botão (isso é porque tava muito perto dos meios de contatos) */
-  transition: background-color 0.3s ease;
-  color: aliceblue;
+  margin: 0 1vw; /* Margem horizontal */
+  border-radius: 3vw; /* Bordas arredondadas */
+  margin-bottom: 1vw; /* Margem inferior */
+  color: white; /* Cor do texto */
+  transition: background-color 0.3s ease; /* Transição suave para alterações no hover */
 }
-.reserva-br :hover {
-  background-color: rgba(0, 0, 0, 0.3);
+
+.reserva-bt:hover {
+  color: black; /* Manter a cor branca no hover */
+  background-color: gray; /* Alterar a cor de fundo no hover */
 }
 
 .nova-pagina {
