@@ -1,63 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Define o tipo de documento HTML e a linguagem principal da página -->
     <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajusta a visualização para dispositivos móveis -->
     <title>STORE</title>
+    <!-- Título da página que aparece na aba do navegador -->
     <link rel="stylesheet" href="CSS/estiloProjeto3.css" />
+    <!-- Importa o arquivo CSS externo -->
   </head>
   <body>
-    <head>
-      <button class="botaoPrincipal">STORE</button>
+    <!-- Cabeçalho da página -->
+    <header>
+      <div class="top-bar">
+        <!-- Botão principal com o nome da loja -->
+        <button class="botaoPrincipal">STORE</button>
 
+        <!-- Botões para o perfil do usuário e o carrinho -->
+        <div class="top-buttons">
+          <button class="perfil">Perfil</button>
+          <!-- Botão de perfil -->
+          <button class="carrinho">Carrinho</button>
+          <!-- Botão de carrinho -->
+        </div>
+      </div>
+
+      <!-- Container da barra de pesquisa -->
       <div class="container-pesquisa">
-        <!--Uma div propria para mexer na barra de pesquisa de produtos do site-->
-        <div class="barra-pesquisa"> 
-          <input
-          type="text"
+        <!-- Div para o campo de entrada de texto da pesquisa -->
+        <div class="barra-pesquisa">
+          <input type="text" <!-- Define um campo de texto -- />
           placeholder="Pesquisar produto"
+          <!-- Texto de dica dentro do campo -->
           class="input-pesquisa"
-        />
-        </div>  
+          <!-- Classe para estilização -->
+          />
+        </div>
+        <!-- Botão para realizar a pesquisa -->
         <button class="botao-pesquisa">Buscar</button>
       </div>
 
+      <!-- Menu de navegação com categorias -->
       <nav>
         <ul>
-          <button class="botao"><li>Eletrodomestico</li></button>
+          <!-- Botões para cada categoria -->
+          <button class="botao"><li>Eletrodomésticos</li></button>
           <button class="botao"><li>Beleza</li></button>
           <button class="botao"><li>Dia a Dia</li></button>
           <button class="botao"><li>Saúde</li></button>
-          <button class="botao"><li>Entreterimento</li></button>
+          <button class="botao"><li>Entretenimento</li></button>
           <button class="botao"><li>Comida</li></button>
         </ul>
       </nav>
-      <section> 
-        
-        <div class="eletrodomestico">
-        <h2>Eletrodomesticos</h2>
-          <!--Div para a foto da geladeira-->
-        <div class="foto-geladeira">
-          <img src="img/Imagem-geladeira.PNG" alt="Geladeira Eletrolux"/>
-          <p>Geladeira Eletrolux Frost Free 310L </p>
-          <p>R$7.999.99</p>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+      <!-- Seção de produtos da categoria Eletrodomésticos -->
+      <section class="eletrodomestico">
+        <h2>Eletrodomésticos</h2>
+        <!-- Título da seção -->
+
+        <!-- Produto 1: Geladeira -->
+        <div class="produto">
+          <img src="img/Imagem-geladeira.PNG" alt="Geladeira Eletrolux" />
+          <!-- Imagem da geladeira -->
+          <p>Geladeira Eletrolux Frost Free 310L</p>
+          <!-- Nome do produto -->
+          <p>R$7.999,99</p>
+          <!-- Preço do produto -->
+          <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          <!-- Botão de ação -->
         </div>
-        <!--Div para a foto do forno eletrico-->
-        <div class="foto-forno">
-          <img src="img/fono-eletrico.PNG" alt="Forno eletrico Eletrolux"/>
-          <p>Forno eletrico Eletrolux </p>
-          <p>R$899.99</p>
+
+        <!-- Produto 2: Forno elétrico -->
+        <div class="produto">
+          <img src="img/fono-eletrico.PNG" alt="Forno elétrico Eletrolux" />
+          <!-- Imagem do forno -->
+          <p>Forno elétrico Eletrolux</p>
+          <!-- Nome do produto -->
+          <p>R$899,99</p>
+          <!-- Preço do produto -->
+          <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          <!-- Botão de ação -->
         </div>
-        <!--Div para a foto do microondas -->
-        <div class="foto-microondas">
-          <img src="img/microondas.PNG" alt="Geladeira Eletrolux"/>
-          <p>Microondas Eletrolux </p>
-          <p>R$399.99</p>
+
+        <!-- Produto 3: Micro-ondas -->
+        <div class="produto">
+          <img src="img/microondas.PNG" alt="Micro-ondas Eletrolux" />
+          <!-- Imagem do micro-ondas -->
+          <p>Micro-ondas Eletrolux</p>
+          <!-- Nome do produto -->
+          <p>R$399,99</p>
+          <!-- Preço do produto -->
+          <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          <!-- Botão de ação -->
         </div>
-      </div>
       </section>
-      
-    </head>
-    <main></main>
+    </main>
   </body>
 </html>

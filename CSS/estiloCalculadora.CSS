@@ -1,0 +1,72 @@
+/* Define o estilo global para o corpo da página */
+body {
+  display: flex; /* Usado para alinhar o conteúdo centralmente na página */
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  align-items: center; /* Alinha verticalmente ao centro */
+  height: 100vh; /* Define a altura do corpo como 100% da altura da janela de visualização */
+  margin: 0; /* Remove a margem padrão do navegador */
+  background-color: aquamarine; /* Define a cor de fundo */
+}
+
+/* Estiliza o container da calculadora */
+.calculadora {
+  width: 320px; /* Define a largura fixa da calculadora */
+  background: gray; /* Cor de fundo do container */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Arredonda os cantos */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra para efeito de profundidade */
+}
+
+/* Estiliza a tela da calculadora */
+#tela {
+  width: 100%; /* Faz a tela ocupar toda a largura disponível */
+  min-width: 200px; /* Define o tamanho mínimo da largura */
+  max-width: 400px; /* Define o tamanho máximo da largura */
+  height: 2vw; /* Altura proporcional à largura da janela (design responsivo) */
+  min-height: 40px; /* Define a altura mínima */
+  max-height: 80px; /* Define a altura máxima */
+  margin-bottom: 20px; /* Espaçamento inferior em relação aos botões */
+  font-size: 1.5rem; /* Tamanho do texto na tela */
+  text-align: right; /* Alinha o texto à direita */
+  padding: 0.5rem; /* Adiciona espaçamento interno */
+  border: 2px solid #f8f8f8; /* Adiciona borda clara */
+  border-radius: 5px; /* Arredonda os cantos */
+}
+
+/* Estiliza o container dos botões */
+.botoes {
+  display: grid; /* Define um layout em grade para os botões */
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Cria 4 colunas com tamanhos iguais */
+  gap: 10px; /* Define o espaçamento entre os botões */
+}
+
+/* Estiliza cada botão individualmente */
+.btn {
+  height: 50px; /* Altura fixa dos botões */
+  font-size: 18px; /* Tamanho do texto */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Arredonda os cantos dos botões */
+  background-color: #f0f0f0; /* Cor de fundo padrão */
+  cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+  transition: background-color 0.2s; /* Adiciona uma transição suave para a cor de fundo ao interagir */
+}
+
+/* Define o estilo do botão ao passar o mouse */
+.btn:hover {
+  background-color: #dcdcdc; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Estiliza o botão "Clear" (limpar) */
+.btn-clear {
+  background-color: #ff6961; /* Cor de fundo vermelha */
+  color: white; /* Texto branco */
+}
+
+/* Estiliza o botão "Equal" (igual) */
+.btn-equal {
+  background-color: #77dd77; /* Cor de fundo verde */
+  color: white; /* Texto branco */
+}

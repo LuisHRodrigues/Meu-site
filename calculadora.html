@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <script src="JS/calculadora.js" defer></script>
+    <link rel="stylesheet" href="CSS/estiloCalculadora.CSS" />
+  </head>
+  <body>
+    <div class="calculadora">
+      <input type="text" id="tela" placeholder="0" disabled />
+      <div class="botoes">
+        <button class="btn btn-clear" onclick="limpar()">C</button>
+        <button class="btn" onclick="backspace()">←</button>
+        <button class="btn" onclick="adicionarValor('(')">(</button>
+        <button class="btn" onclick="adicionarValor(')')">)</button>
+
+        <button class="btn" onclick="adicionarValor('7')">7</button>
+        <button class="btn" onclick="adicionarValor('8')">8</button>
+        <button class="btn" onclick="adicionarValor('9')">9</button>
+        <button class="btn" onclick="adicionarValor('/')">÷</button>
+
+        <button class="btn" onclick="adicionarValor('4')">4</button>
+        <button class="btn" onclick="adicionarValor('5')">5</button>
+        <button class="btn" onclick="adicionarValor('6')">6</button>
+        <button class="btn" onclick="adicionarValor('*')">×</button>
+
+        <button class="btn" onclick="adicionarValor('1')">1</button>
+        <button class="btn" onclick="adicionarValor('2')">2</button>
+        <button class="btn" onclick="adicionarValor('3')">3</button>
+        <button class="btn" onclick="adicionarValor('-')">-</button>
+
+        <button class="btn" onclick="adicionarValor('0')">0</button>
+        <button class="btn" onclick="adicionarValor('.')">.</button>
+        <button class="btn btn-equal" onclick="calcular()">=</button>
+        <button class="btn" onclick="adicionarValor('+')">+</button>
+      </div>
+    </div>
+  </body>
+</html>
